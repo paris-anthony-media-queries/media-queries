@@ -1,0 +1,35 @@
+body {
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    li {
+        padding: .5rem;
+        background: lightgray;
+        margin: .5rem;
+        text-align: center;
+    }
+
+
+    .main {
+        display: flex;
+    }
+}
+
