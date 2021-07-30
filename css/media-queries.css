@@ -1,50 +1,67 @@
-body {
-    font-family: Arial;
-}
+
+/*DESKTOP DESIGN*/
 
 * {
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial;
+}
+
+
 .hidden-on-desktop {
     display: none;
 }
-
-nav {
-    width: 100%;
+#main {
+    font-size: larger;
 }
+
+h1 {
+  margin-top: 0;
+  font-size: 3em;
+}
+
 
 ul {
+    text-align: right;
     padding: 0;
     display: flex;
-    justify-content: space-around;
-    /*flex-direction: row-reverse;*/
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
 
 }
 
-li {
+/*li {*/
+/*    margin-bottom: .25em;*/
+/*    margin-top: .25em;*/
+/*    margin-left: 0;*/
+/*    margin-right: 0;*/
+/*    */
+/*    text-align: right;*/
+/*    display: inline;*/
+/*}*/
 
-    margin-bottom: .25em;
-    margin-top: .25em;
-    margin-left: 0;
-    margin-right: 0;
+.sub-section {
+    margin-top: 1em;
+    font-style: italic;
 }
 
 .header-img {
     height: auto;
 }
 
-#main {
-    font-size: larger;
-}
+
 
 footer {
     margin-right: auto;
     margin-left: .5em;
 }
 
-@media screen and (max-width: 768px) {
+/*MOBILE DESIGN*/
 
+@media screen and (min-width: 370px) and (max-width: 650px) {
     .alert-info {
         border: 1px solid gray;
         background: darkturquoise;
@@ -56,30 +73,34 @@ footer {
         justify-content: center;
     }
 
+
+    h1 {
+        text-align: center;
+        width: 270px;
+        margin-bottom: 0;
+    }
+
+
+
+    li {
+        padding: 1.5em;
+        margin: .5em;
+        background: lightgray;
+        border: 1px;
+        text-align: center;
+        width: 100%;
+        list-style-type: none;
+
+    }
+
     body {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-
-
-    .header-img {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-    }
-
-
-
-   .nav-links, a {
-         display: flex;
-        text-align: center;
-        flex-direction: column;
-        padding: .75rem;
-        background: lightgray;
-        margin: .75rem;
-
+    p {
+        margin: 0;
 
     }
 
@@ -88,17 +109,33 @@ footer {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    .main > p {
+        margin-top: .5em;
+    }
+
+
+    .header-img {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+
+    h2 > p {
+        margin-top: .5em;
     }
 
     .sub-section {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
+        margin-bottom: 7em;
     }
-    h2 {
-        display: flex;
 
-    }
+
+
 
 }
 
