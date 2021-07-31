@@ -1,67 +1,62 @@
 
 /*DESKTOP DESIGN*/
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial;
-}
+@media screen and (min-width: 650px) and (max-width: 1720px) {
+    body {
+        font-family: Arial;
+    }
 
 
-.hidden-on-desktop {
-    display: none;
-}
-#main {
-    font-size: larger;
-}
+    .hidden-on-desktop {
+        display: none;
+    }
 
-h1 {
-  margin-top: 0;
-  font-size: 3em;
-}
+    h1 {
+        margin-top: 1em;
+        font-size: 3em;
+        justify-content: center;
+    }
+
+    ul {
+        /*text-align: right;*/
+        list-style-type: none;
+        text-decoration: underline;
+        display: flex;
+        /*flex-direction: row;*/
+        /*align-self: flex-start;*/
+        justify-content: flex-end;
+        padding: 0;
+        /*flex-wrap: wrap;*/
+    }
 
 
-ul {
-    text-align: right;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    justify-content: space-between;
+    .main {
+        float: left;
+        width: 600px;
+        margin: 30px;
+    }
 
-}
+    .sub-section {
 
-/*li {*/
-/*    margin-bottom: .25em;*/
-/*    margin-top: .25em;*/
-/*    margin-left: 0;*/
-/*    margin-right: 0;*/
-/*    */
-/*    text-align: right;*/
-/*    display: inline;*/
-/*}*/
+        font-style: italic;
+        float: right;
+        width: 600px;
+        margin: 30px;
+    }
 
-.sub-section {
-    margin-top: 1em;
-    font-style: italic;
-}
-
-.header-img {
-    height: auto;
 }
 
 
 
-footer {
-    margin-right: auto;
-    margin-left: .5em;
-}
+
+
 
 /*MOBILE DESIGN*/
 
-@media screen and (min-width: 370px) and (max-width: 650px) {
+@media all and (min-width: 370px) and (max-width: 850px) {
+    * {
+        box-sizing: border-box;
+    }
     .alert-info {
         border: 1px solid gray;
         background: darkturquoise;
@@ -72,6 +67,9 @@ footer {
         display: flex;
         justify-content: center;
     }
+    #main {
+        font-size: larger;
+    }
 
 
     h1 {
@@ -80,9 +78,19 @@ footer {
         margin-bottom: 0;
     }
 
+    ul {
+        flex-basis: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        list-style-type: none;
+    }
+    .nav-links {
 
+    }
 
     li {
+
         padding: 1.5em;
         margin: .5em;
         background: lightgray;
@@ -91,7 +99,9 @@ footer {
         width: 100%;
         list-style-type: none;
 
+
     }
+
 
     body {
         display: flex;
@@ -129,12 +139,16 @@ footer {
 
     .sub-section {
         display: flex;
-        align-items: flex-start;
+        align-items: self-start;
         flex-direction: column;
         margin-bottom: 7em;
     }
-
-
+    footer {
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        margin-right: auto;
+        margin-left: .5em;
+    }
 
 
 }
